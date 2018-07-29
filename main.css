@@ -1,0 +1,85 @@
+body {
+box-sizing: border-box;
+margin: 0;
+font-family: 'Gaegu', cursive;
+}
+
+/* HEADING */ 
+
+#heading {
+    height: 100px;
+    color: white;
+    background-color: darkgrey;
+    padding: 1px;  
+}
+
+
+#heading h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* MAIN CONTAINER */
+
+.display {
+    display: none;
+}
+
+.row {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button {
+    margin-top: 30px;
+    background-color: darkgrey;
+    color: white;
+    height: 50px;
+    width: 150px;
+}
+
+img {
+    border: solid 4px black;
+    padding: 4px;
+}
+
+/* CREATING THE OVERLAY */
+
+.p1, .p2, .p3 {
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.cross {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    
+}
